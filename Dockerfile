@@ -6,4 +6,4 @@ COPY . /app
 
 RUN npm install
 
-CMD [ "node","src/main.js" ]
+CMD [ "npx","nodemon","src/main.js" ]
