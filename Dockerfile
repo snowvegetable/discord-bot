@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:20-alpine
 
 WORKDIR /app
 
@@ -6,4 +6,4 @@ COPY . /app
 
 RUN npm install
 
-CMD [ "npx","nodemon","src/main.js" ]
+CMD [ "npm","start" ]
